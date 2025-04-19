@@ -1,0 +1,12 @@
+  {% extends 'base.html' %}
+  {% block titulo %}Atividade 1{% endblock %}
+  {% block conteudo %}
+
+    <form action="" method="post">
+      peso: <input type="number" name="pesoForm" step="any"><br>
+      altura: <input type="number" name="alturaForm" step="any"><br>
+      <input type="submit" value="Enviar">
+    </form>
+    <h2>Seu IMC: {{ imc }}</h2>
+    
+  {% endblock %}
